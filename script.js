@@ -1,15 +1,12 @@
-const eyeIcon = document.getElementById('eye');
-const passwordField = document.getElementById('password');
-eyeIcon.addEventListener('click', () => {
-    if (passwordField.type === 'password'&& passwordField.value){
-        passwordField.type = 'text';
-        eyeIcon.classList.remove('fa-eye')
-        eyeIcon.classList.add('fa-eye-slash');
-
-    } 
-    else {
-        passwordField.type = 'password';
-        eyeIcon.classList.remove('fa-eye-slash')
-        eyeIcon.classList.add('fa-eye');
-    }
-});
+function func() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+      if (username == "abhi" && password == "abhi@123") {
+        
+          window.location.href = "homepage.html";
+          return true;
+      } else {
+          alert("Login failed");
+          return false;
+      }
+  }   
